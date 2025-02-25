@@ -9,12 +9,9 @@ const Header = () => {
                 </h1>
                 <nav className="mt-2 md:mt-0">
                     <ul className="flex gap-6 text-lg">
-                        <li>
-                            <Link to="/" className="text-white hover:text-gray-200 transition-all">Inicio</Link>
-                        </li>
-                        <li>
-                            <Link to="/explorar" className="text-white hover:text-gray-200 transition-all">Explorar</Link>
-                        </li>
+                        <li><Link to="/" className="text-white hover:text-gray-200">Inicio</Link></li>
+                        <li><Link to="/explorar" className="text-white hover:text-gray-200">Explorar Juegos</Link></li>
+                        <li><Link to="/explorar-publishers" className="text-white hover:text-gray-200">Explorar Publishers</Link></li> {/* ✅ Nueva opción */}
                     </ul>
                 </nav>
             </div>

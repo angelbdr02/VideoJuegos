@@ -33,6 +33,20 @@ footer {
   left: 0;
 }
 
+/* Evitar que el carrusel se superponga */
+.carrusel-container {
+  position: relative;
+  z-index: 0;  /* El carrusel estará por debajo del header y no pasará encima del footer */
+  overflow: hidden;  /* Evitar que las imágenes salgan fuera */
+}
+
+/* Footer siempre encima */
+footer {
+  
+  z-index: 1;
+}
+
+
 /* Ajustes responsivos */
 @media (max-width: 768px) {
   .container {
